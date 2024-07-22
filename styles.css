@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.banner {
+    background-image: url('https://salfordcommunityleisure.co.uk/wp-content/uploads/2023/09/Cafe-discount-1699x846.jpg'); /* Replace with the path to your banner image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    height: 300px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+header .container {
+    text-align: center;
+}
+.navbar-brand .logo {
+    height: 50px; /* Adjust height as needed */
+    margin-right: 10px; /* Adjust as needed */
+    vertical-align: middle; /* Align vertically */
+}
+.navbar {
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background */
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+    color: #007bff;
+}
+
+.product-container {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+}
+
+.product-wrapper {
+    display: flex;
+    width: 200%; /* Adjust width to match the number of items */
+    animation: scroll-left 20s linear infinite;
+}
+
+.product-wrapper .card {
+    display: inline-block;
+    width: 300px; /* Adjust width as needed */
+    margin-right: 15px; /* Adjust spacing between items */
+    white-space: normal;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-35%);
+    }
+}
